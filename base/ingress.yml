@@ -25,6 +25,17 @@ spec:
                 name: dev-po1-nextjs
                 port:
                   name: http
+    - host: po1.dev.travcorpservices.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: dev-po1-nextjs
+                port:
+                  name: http
   tls:
   - hosts:
     - po1-nextjs.dev.travcorpservices.com
+    - po1.dev.travcorpservices.com
