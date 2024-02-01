@@ -1,0 +1,11 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: po1-nextjs
+spec:
+  template:
+    spec:
+      containers:
+      - name: po1-nextjs
+        image: docker.io/kostiscodefresh/simple-env-app:2.0

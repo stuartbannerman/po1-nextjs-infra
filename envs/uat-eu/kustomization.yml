@@ -1,0 +1,19 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: po1
+namePrefix: uat-eu-
+
+resources:
+- ../../base
+
+components:
+- ../../variants/uat
+- ../../variants/eu
+
+patchesStrategicMerge:
+- deployment.yml
+- version.yml
+- replicas.yml
+- settings.yml
+
