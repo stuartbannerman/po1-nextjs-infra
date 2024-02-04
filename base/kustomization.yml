@@ -6,3 +6,4 @@ resources:
 - service.yml
 - ingress.yml
 - configmap.yml
+- keda.yml
