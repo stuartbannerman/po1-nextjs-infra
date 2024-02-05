@@ -17,7 +17,7 @@ spec:
       name: po1-keda-sqs-credentials
     metadata:
       queueURL: https://sqs.eu-west-1.amazonaws.com/236731556556/po1-k8-sqs-test.fifo
-      queueLength: 2
+      queueLength: '2'
       awsRegion: eu-west-1
       identityOwner: operator
 ---
